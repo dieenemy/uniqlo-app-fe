@@ -1,0 +1,27 @@
+.sidebar {
+  padding-right: 15px;
+  grid-column: 1 / 2;
+
+  .account-title {
+    text-align: center;
+    padding: 15px 20px;
+    background: #000;
+    color: #fff;
+    text-transform: uppercase;
+    margin-bottom: 0;
+  }
+
+  ul {
+    border: 1px solid rgba(136, 136, 136, 0.12);
+
+    li:not(:last-child) {
+      border-bottom: 1px solid rgba(136, 136, 136, 0.12);
+    }
+
+    a {
+      padding: 14px 20px;
+      font-size: 12px;
+      color: rgba(71, 71, 71, 0.8);
+    }
+  }
+}

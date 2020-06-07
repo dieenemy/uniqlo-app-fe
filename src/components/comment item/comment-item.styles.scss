@@ -1,0 +1,253 @@
+.product-tabs-wrapper {
+  padding-top: 30px;
+  padding-bottom: 50px;
+  background-color: #f9f9f9;
+
+  .container {
+    width: 90%;
+    margin: 0 auto;
+
+    .tabs.wc-tabs {
+      margin-bottom: 25px;
+      text-align: center;
+
+      li {
+        display: inline-block;
+        margin-right: 30px;
+        margin-bottom: 15px;
+        border-bottom: 1px solid #e4e4e4;
+
+        &.active {
+          color: rgba(0, 0, 0, 0.9);
+          border-color: #545454;
+        }
+
+        span {
+          display: inline-block;
+          font-size: 20px;
+          font-weight: 600;
+          color: rgba(0, 0, 0, 0.5);
+          padding: 3px 0;
+          cursor: pointer;
+        }
+      }
+    }
+
+    .uniqlo-tab-wrapper {
+      display: none;
+
+      &.active {
+        display: block;
+      }
+    }
+
+    #tabs-description {
+      text-align: center;
+
+      .title {
+        font-size: 26px;
+        display: block;
+        margin-bottom: 30px;
+        position: relative;
+
+        &:after {
+          content: '';
+          position: absolute;
+          bottom: -12px;
+          left: 50%;
+          margin-left: -15px;
+          width: 30px;
+          height: 2px;
+          display: inline-block;
+          background-color: #179a94;
+        }
+      }
+    }
+
+    #reviews {
+      position: relative;
+
+      #comments {
+        width: 50%;
+        padding-top: 20px;
+        padding-right: 40px;
+        float: left;
+
+        h2 {
+          font-size: 18px;
+          font-weight: 700;
+        }
+
+        .commentlist {
+          margin-top: 30px;
+
+          li {
+            margin-bottom: 30px;
+            list-style: none;
+
+            #comment-user {
+              position: relative;
+              min-height: 95px;
+              padding: 12px 12px 12px 85px;
+
+              img {
+                position: absolute;
+                left: 0;
+                top: 13px;
+                max-width: 60px;
+                border-radius: 50%;
+              }
+
+              .star-rating {
+                float: right;
+                margin-bottom: 5px;
+              }
+
+              .meta {
+                line-height: 18px;
+                display: inline;
+                font-size: 12px;
+
+                strong {
+                  color: #373737;
+                }
+
+                time {
+                  font-style: italic;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      #review_form_wrapper {
+        float: left;
+        width: 50%;
+        border-left: 1px solid #efefef;
+        border-bottom: 1px solid #efefef;
+        padding-top: 20px;
+        padding-bottom: 40px;
+        padding-left: 40px;
+
+        #reply-title {
+          display: block;
+          font-size: 18px;
+          font-weight: 700;
+          margin-bottom: 15px;
+        }
+
+        .comment-notes {
+          margin-bottom: 20px;
+          font-size: 14px;
+        }
+
+        .comment-form-rating {
+          margin-bottom: 15px;
+          font-size: 14px;
+
+          .star-rate {
+            display: inline-block;
+            margin-bottom: 0;
+            margin-right: 15px;
+          }
+
+          .stars {
+            display: inline-block;
+            position: relative;
+            vertical-align: middle;
+
+            i {
+              font-size: 16px;
+            }
+          }
+        }
+
+        .comment-form-comment {
+          margin-bottom: 10px;
+
+          > label {
+            display: block;
+            font-size: 14px;
+            margin-bottom: 5px;
+          }
+
+          textarea {
+            height: 150px;
+            width: 100%;
+            background-color: #efefef;
+            border: none;
+            box-shadow: none;
+            line-height: 1.5;
+            padding: 10px 15px;
+          }
+        }
+
+        .submit-form {
+          border: 2px solid #000;
+          background-color: #fff;
+        }
+      }
+    }
+
+    #tab-shipping {
+      .alignleft {
+        float: left;
+        margin-top: 3px;
+        margin-bottom: 20px;
+        margin-right: 25px;
+      }
+
+      p {
+        font-size: 14px;
+        color: #4c4c4c;
+        line-height: 1.6;
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
+
+@media (max-width: 414px) {
+  .product-tabs-wrapper {
+    .container {
+      .tabs.wc-tabs {
+        li {
+          display: block;
+          margin-bottom: 20px;
+          border: none;
+
+          &.active {
+            span {
+              border-bottom: 1px solid #545454;
+            }
+          }
+        }
+      }
+
+      #reviews {
+        #comments {
+          width: auto;
+          padding-right: 0;
+          padding-bottom: 30px;
+          float: none;
+          border-bottom: 1px solid #efefef;
+        }
+
+        #review_form_wrapper {
+          float: none;
+          width: auto;
+          border-left: none;
+          border-bottom: none;
+          padding-top: 35px;
+          padding-bottom: 0;
+          padding-left: 0;
+
+          .submit-form {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}

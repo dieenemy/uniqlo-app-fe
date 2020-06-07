@@ -1,0 +1,24 @@
+.search-container {
+  border: 1px solid #8e8e8e;
+  border-radius: 20px;
+  position: relative;
+  display: flex;
+
+  .search {
+    border: none;
+    background: transparent;
+    padding-left: 10px;
+    display: flex;
+  }
+
+  .search-text {
+    border: none;
+    margin-bottom: 0;
+    height: 36px;
+    background: transparent;
+    border-color: currentcolor currentcolor #8e8e8e;
+    border-width: 0 0 1px;
+    padding: 0 15px;
+    height: 40px;
+  }
+}

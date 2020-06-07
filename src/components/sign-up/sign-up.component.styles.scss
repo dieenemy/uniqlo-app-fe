@@ -1,0 +1,133 @@
+.register {
+  .show-error {
+    width: 90%;
+    margin: 0 auto 20px;
+    border: 2px solid #e74c3c;
+    padding: 14px 25px 14px 55px;
+    line-height: 1.4;
+
+    h2 {
+      margin: 0;
+      font-size: 14px;
+      font-weight: 400;
+      color: #c0392b;
+    }
+  }
+
+  .show-success {
+    width: 90%;
+    margin: 0 auto 20px;
+    border: 2px solid #2ecc71;
+    padding: 14px 25px 14px 55px;
+    line-height: 1.4;
+
+    h2 {
+      margin: 0;
+      font-size: 14px;
+      font-weight: 400;
+      color: #27ae60;
+    }
+  }
+
+  .register-container {
+    width: 90%;
+    margin: 0 auto;
+
+    #register {
+      #customer-register {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+        .form-register-wrapper {
+          padding: 40px 60px 60px;
+
+          label {
+            display: block;
+            font-size: 14px;
+            color: #1b1919;
+            font-weight: 400;
+            margin-bottom: 5px;
+          }
+
+          .required {
+            color: #e01020;
+            font-size: 16px;
+            border: none;
+          }
+
+          p {
+            margin-bottom: 20px;
+            display: flex;
+            flex-direction: column;
+          }
+
+          h2 {
+            font-size: 34px;
+            margin-bottom: 20px;
+            font-weight: 400;
+
+            .ti-user {
+              font-size: 24px;
+              margin-right: 10px;
+            }
+          }
+
+          input#email,
+          input#password,
+          input#name,
+          input#confirmPassword {
+            width: 100%;
+            height: 40px;
+            border: 1px solid rgba(129, 129, 129, 0.25);
+            font-size: 14px;
+            line-height: 18px;
+            padding: 0 10px;
+            transition: border-color 0.5s;
+            box-shadow: none;
+            border-radius: 0;
+          }
+
+          .privacy-policy-text {
+            p {
+              font-size: 14px;
+            }
+          }
+
+          .form-login__submit {
+            border: 2px solid #000;
+            background-color: #fff;
+
+            &:hover {
+              color: #fff;
+              background: #000;
+            }
+          }
+        }
+
+        .register-text {
+          padding: 40px 60px 60px;
+          border-left: 1px solid rgba(0, 0, 0, 0.1);
+          text-align: center;
+
+          h2 {
+            font-size: 34px;
+            font-weight: 400;
+            margin-bottom: 20px;
+          }
+
+          .register-info {
+            font-size: 14px;
+            margin-bottom: 20px;
+            color: #4c4c4c;
+          }
+
+          .switch-to-register {
+            border-color: #000;
+            background-color: #000;
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+}

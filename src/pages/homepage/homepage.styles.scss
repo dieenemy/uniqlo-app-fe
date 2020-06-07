@@ -1,0 +1,226 @@
+.newsletter {
+  background: url(https://i.ibb.co/g6f4WG9/main-big-baner-8.jpg);
+  margin-bottom: 3%;
+  padding: 8% 25px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  ::placeholder {
+    color: #fff;
+  }
+
+  .newsletter-container {
+    padding: 35px 15px 0;
+
+    .title {
+      font-size: 26px;
+      color: #ffffff;
+      line-height: 1;
+      text-align: center;
+      font-style: italic;
+      font-weight: 400;
+      margin-bottom: 20px;
+    }
+
+    .subtitle {
+      font-size: 58px;
+      color: #ffffff;
+      line-height: 1;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .text-wrapper {
+      width: 33.33333333%;
+      margin: 0 auto 25px;
+      padding: 0 15px;
+
+      p {
+        color: rgba(255, 255, 255, 0.8);
+        text-align: center;
+        font-size: 14px;
+      }
+    }
+
+    .form-fields {
+      display: flex;
+      justify-content: center;
+      color: rgba(255, 255, 255, 0.8);
+
+      p:first-child {
+        max-width: 390px;
+        width: 100%;
+        border-bottom: 2px solid rgba(255, 255, 255, 0.7);
+
+        input {
+          background: transparent !important;
+          min-height: 32px;
+          height: 38px;
+          font-size: 14px;
+          line-height: 18px;
+          padding: 0 10px;
+          border: none;
+          color: #fff;
+          background-color: white;
+          margin: 0;
+          font-family: 'Karla', sans-serif;
+        }
+      }
+
+      p:last-child {
+        input {
+          padding: 11px 55px;
+          background: #fff;
+          text-align: center;
+          color: #5f5f5f;
+          text-transform: uppercase;
+          border: 1px solid #fff;
+          line-height: 18px;
+          letter-spacing: 0.3px;
+          margin: 0;
+          font-size: 14px;
+          font-family: 'Karla', sans-serif;
+          transition: all 0.4s;
+
+          &:hover {
+            color: #fff;
+            background-color: #292929;
+            border: 1px solid #292929;
+          }
+        }
+      }
+    }
+  }
+}
+
+.client {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+  width: 90%;
+  margin: 0 auto 25px;
+
+  .client-think {
+    padding: 35px 15px 0;
+    text-align: center;
+
+    .title {
+      font-size: 26px;
+      display: flex;
+      flex-direction: column;
+      font-weight: 400;
+      margin-bottom: 15px;
+
+      .title-separator {
+        color: #c1c1c1;
+        font-size: 16px;
+        position: relative;
+
+        span {
+          &:before {
+            content: ' ';
+            position: absolute;
+            bottom: 7px;
+            left: 50%;
+            margin-left: -34px;
+            width: 24px;
+            height: 1px;
+            display: inline-block;
+            background-color: #dcdcdc;
+          }
+
+          &:after {
+            content: ' ';
+            position: absolute;
+            bottom: 7px;
+            left: 50%;
+            margin-left: 9px;
+            width: 24px;
+            height: 1px;
+            display: inline-block;
+            background-color: #dcdcdc;
+          }
+        }
+      }
+    }
+
+    .testimonial {
+      padding: 15px;
+
+      .testimonial-avatar {
+        margin-bottom: 15px;
+
+        img {
+          max-width: 100px;
+          min-width: 60px;
+          border-radius: 50%;
+        }
+      }
+
+      .testimonial-content {
+        color: #4c4c4c;
+        font-size: 14px;
+
+        .tesmonial-comment {
+          line-height: 1.5;
+        }
+
+        footer {
+          margin-top: 15px;
+          font-weight: 700;
+          color: #1b1919;
+
+          span {
+            color: #4c4c4c;
+            font-weight: 400;
+
+            &:before {
+              content: ' - ';
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .image-wrapper {
+    padding: 35px 15px 0;
+
+    .instagram-widget {
+      display: flex;
+      flex-wrap: wrap;
+
+      li {
+        max-width: 33.3333333333%;
+        padding: 5px;
+        flex-basis: 33.3333333333%;
+
+        .wrap-pics {
+          overflow: hidden;
+          height: 100%;
+          width: 100%;
+
+          img {
+            width: 100%;
+            height: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 414px) {
+  .newsletter {
+    .newsletter-container {
+      .text-wrapper {
+        width: 100%;
+      }
+
+      .form-fields {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  }
+}

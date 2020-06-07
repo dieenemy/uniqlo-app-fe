@@ -1,0 +1,126 @@
+.checkout-container {
+  width: 90%;
+  padding: 0 15px;
+  margin: 0 auto 40px;
+  display: grid;
+
+  table {
+    width: 100%;
+    font-size: 14px;
+    border-collapse: collapse;
+
+    tr th {
+      padding: 15px 10px;
+      text-align: center;
+      letter-spacing: 1px;
+      font-size: 18px;
+      font-weight: 600;
+      text-transform: uppercase;
+      line-height: 1.4;
+      color: #1b1919;
+      vertical-align: middle;
+      border: none;
+      border-bottom: 2px solid #efefef;
+
+      &.product-remove {
+        width: 40px;
+      }
+
+      &.product-thumbnail {
+        width: 10px;
+      }
+
+      &.product-name {
+        text-align: left;
+      }
+    }
+  }
+
+  .cart-totals {
+    width: 48%;
+    float: right;
+    background: #f8f8f8;
+    background-image: url(https://i.ibb.co/xC9CvkT/checkout-border.png);
+    background-position: left top;
+    background-repeat: no-repeat;
+    padding: 25px;
+    padding-top: 40px;
+
+    h2 {
+      font-size: 24px;
+      font-weight: 700;
+      text-align: center;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+    }
+
+    .responsive-table__wrapper {
+      background-color: #fff;
+      padding: 10px 20px;
+      margin-bottom: 30px;
+
+      .order-total {
+        th,
+        td {
+          border-bottom: none !important;
+          font-size: 22px;
+        }
+      }
+
+      th {
+        text-align: left;
+        font-size: 14px;
+        width: 45%;
+        text-transform: capitalize;
+        border-bottom: 1px solid #e6e6e6;
+      }
+
+      td {
+        text-align: right;
+        border-bottom: 1px solid #e6e6e6 !important;
+      }
+    }
+  }
+}
+
+@media (max-width: 414px) {
+  .checkout-container {
+    padding: 0;
+
+    table {
+      thead {
+        display: none;
+      }
+    }
+
+    .cart-totals {
+      width: 100%;
+      float: none;
+      padding: 30px 15px 15px 15px;
+
+      .responsive-table__wrapper {
+        background-color: transparent;
+
+        td {
+          background-color: transparent;
+          display: block;
+          text-align: right;
+          border-bottom: none !important;
+          padding: 20px;
+
+          &:before {
+            content: attr(data-title) ': ';
+            font-weight: 700;
+            float: left;
+            text-transform: uppercase;
+            font-size: 14px;
+          }
+        }
+
+        th {
+          display: none;
+        }
+      }
+    }
+  }
+}

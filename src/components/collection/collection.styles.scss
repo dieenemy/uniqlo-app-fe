@@ -1,0 +1,36 @@
+.collection-page {
+  display: flex;
+  flex-direction: column;
+
+  .container-items {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .title {
+    font-size: 34px;
+    margin: 0 auto 30px;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+
+  .items {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(268px, 1fr));
+    grid-gap: 60px 10px;
+  }
+}
+
+@media (max-width: 414px) {
+  .collection-page {
+    .container-items {
+      display: block;
+
+      .items {
+        grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+        grid-gap: 60px 10px;
+        width: 100%;
+      }
+    }
+  }
+}

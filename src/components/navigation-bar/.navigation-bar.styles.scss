@@ -1,0 +1,162 @@
+.navigation {
+  .mobile-nav-icon {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    cursor: pointer;
+    display: none;
+
+    .uniqlo-burger {
+      display: inline-block;
+      width: 18px;
+      height: 2px;
+      background-color: rgba(0, 0, 0, 0.8);
+      -webkit-transition: all 0.25s ease-in-out;
+      transition: all 0.25s ease-in-out;
+      position: relative;
+      vertical-align: middle;
+
+      &:before {
+        display: inline-block;
+        width: 18px;
+        height: 2px;
+        background-color: rgba(0, 0, 0, 0.8);
+        -webkit-transition: all 0.25s ease-in-out;
+        transition: all 0.25s ease-in-out;
+        position: absolute;
+        content: '';
+        left: 0;
+        top: -6px;
+      }
+
+      &:after {
+        display: inline-block;
+        width: 18px;
+        height: 2px;
+        background-color: rgba(0, 0, 0, 0.8);
+        -webkit-transition: all 0.25s ease-in-out;
+        transition: all 0.25s ease-in-out;
+        position: absolute;
+        content: '';
+        left: 0;
+        top: 6px;
+      }
+    }
+  }
+
+  .navigation-icon {
+    .ti-heart {
+      &.navbar {
+        display: flex;
+        align-items: center;
+        font-size: 20px;
+      }
+    }
+  }
+}
+
+.mobile-nav {
+  display: none;
+}
+
+@media (max-width: 414px) {
+  .navigation {
+    height: 60px;
+
+    .navigation-header {
+      display: none;
+    }
+
+    .mobile-nav-icon {
+      display: block;
+    }
+
+    .navigation-logo {
+      width: 50%;
+    }
+
+    .navigation-icon {
+      li:first-child {
+        display: none;
+      }
+
+      li {
+        padding: 0 5px;
+      }
+    }
+  }
+
+  .mobile-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 270px;
+    height: 100%;
+    z-index: 500;
+    overflow: hidden;
+    overflow-y: scroll;
+    background-color: #0c0c0c;
+    display: inline-block;
+    transform: translateX(-100%);
+    transition: 0.4s;
+
+    &.show {
+      transform: translateX(0);
+    }
+
+    #searchform {
+      position: relative;
+      padding: 10px;
+      border-bottom: 2px solid rgba(92, 92, 92, 0.43);
+
+      label {
+        position: absolute;
+        clip: rect(1px, 1px, 1px, 1px);
+      }
+
+      .search-field {
+        background-color: rgba(255, 255, 255, 0.1);
+        border: none;
+        border: 1px solid rgba(208, 208, 208, 0.09);
+        padding: 14px 50px 14px 18px;
+        font-size: 14px;
+        color: #fff;
+        height: 48px;
+      }
+
+      #searchsubmit {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        font-size: 0;
+        border: none;
+        background-color: transparent;
+        padding: 0;
+        width: 50px;
+        color: rgba(255, 255, 255, 0.8);
+        text-align: center;
+
+        span {
+          display: inline-block;
+          line-height: 48px;
+          font-size: 20px;
+        }
+      }
+    }
+
+    ul li {
+      display: block;
+      position: relative;
+
+      a {
+        display: block;
+        padding: 12px 0 12px 15px;
+        font-size: 16px;
+        line-height: 26px;
+        letter-spacing: 0.3px;
+        border-bottom: 1px solid rgba(92, 92, 92, 0.23);
+      }
+    }
+  }
+}

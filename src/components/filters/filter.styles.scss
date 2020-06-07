@@ -1,0 +1,164 @@
+.shop-loop-head {
+  margin-bottom: 20px;
+  margin-top: -10px;
+  text-align: right;
+  line-height: 20px;
+  padding: 10px 0 0 0;
+  vertical-align: middle;
+  width: 100%;
+
+  .result-count {
+    font-size: 13px;
+    letter-spacing: 0.3px;
+    color: #9e9e9e;
+    display: inline-block;
+    margin-bottom: 10px;
+    line-height: 20px;
+    vertical-align: middle;
+  }
+
+  .uniqlo-show-sidebar-btn {
+    display: none;
+    float: left;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    vertical-align: middle;
+    font-size: 16px;
+    font-weight: 700;
+    color: #1b1919;
+    text-transform: capitalize;
+    cursor: pointer;
+    margin-right: 20px;
+    margin-bottom: 10px;
+
+    .uniqlo-side-bar-icon {
+      display: inline-block;
+      width: 18px;
+      height: 2px;
+      background-color: rgba(0, 0, 0, 0.8);
+      -webkit-transition: all 0.25s ease-in-out;
+      transition: all 0.25s ease-in-out;
+    }
+  }
+
+  .uniqlo-filter-buttons {
+    display: inline-block;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    line-height: 19px;
+    vertical-align: middle;
+
+    .open-filters.btn-opened {
+      display: inline-block;
+      font-size: 16px;
+      font-weight: 700;
+      color: #1b1919;
+      position: relative;
+      padding-right: 20px;
+      text-decoration: none;
+
+      &:hover {
+        &:before {
+          transform: rotate(-50deg);
+        }
+
+        &:after {
+          transform: translateX(-6px) rotate(50deg);
+        }
+      }
+
+      &.show {
+        &:before {
+          transform: rotate(-45deg);
+        }
+
+        &:after {
+          transform: rotate(45deg);
+        }
+      }
+
+      &:before,
+      &:after {
+        content: ' ';
+        width: 10px;
+        height: 2px;
+        position: absolute;
+        right: 0;
+        top: 9px;
+        display: inline-block;
+        background-color: #1b1919;
+        -webkit-transition: all 0.2s ease-in-out;
+        transition: all 0.2s ease-in-out;
+      }
+
+      &:before {
+        transform: rotate(-90deg);
+      }
+    }
+  }
+}
+
+.filters-area.filters-opened {
+  display: none;
+  padding: 30px 30px 35px;
+  margin-top: 0px;
+  padding-bottom: 0px;
+  margin-bottom: 35px;
+  background-color: #f9f9f9;
+  color: rgba(0, 0, 0, 0.8);
+
+  &.show {
+    display: block;
+  }
+
+  .filters-inner-area-.row {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+
+    .filter-widget {
+      .widget-title {
+        font-size: 16px;
+        text-transform: uppercase;
+        font-weight: 700;
+        letter-spacing: 1.5px;
+        color: #1b1919;
+        margin-bottom: 25px;
+        position: relative;
+        padding-bottom: 4px;
+      }
+
+      li {
+        margin-bottom: 15px;
+        color: rgba(0, 0, 0, 0.8);
+        font-size: 14px;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+
+        input {
+          margin-right: 5px;
+        }
+      }
+
+      .filter-swatch {
+        display: inline-block;
+        margin-right: 10px;
+
+        > span {
+          position: relative;
+          display: inline-block;
+          border-radius: 50%;
+          background-size: contain;
+          background-position: center center;
+          background-repeat: no-repeat;
+          vertical-align: middle;
+          -webkit-transition: all 0.2s ease;
+          transition: all 0.2s ease;
+          width: 25px;
+          height: 25px;
+        }
+      }
+    }
+  }
+}

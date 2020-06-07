@@ -1,0 +1,7 @@
+const ShopActionTypes = {
+  UPDATE_COLLECTIONS: 'UPDATE_COLLECTIONS',
+  SEARCH_COLLECTIONS: 'SEARCH_COLLECTION',
+  ITEM_QUICK_VIEW: 'ITEM_QUICK_VIEW',
+};
+
+export default ShopActionTypes;

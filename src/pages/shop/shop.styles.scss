@@ -1,0 +1,10 @@
+.shop-page {
+  background: #fff;
+  padding: 80px 0 130px 0;
+}
+
+@media (max-width: 414px) {
+  .shop-page {
+    padding-top: 0;
+  }
+}

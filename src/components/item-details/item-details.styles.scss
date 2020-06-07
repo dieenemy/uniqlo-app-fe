@@ -1,0 +1,200 @@
+.item-details {
+  padding: 40px 0 80px;
+
+  .item-details__top {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    width: 90%;
+    margin: 0 auto 60px;
+
+    .image {
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    .item-info {
+      padding-left: 50px;
+      display: flex;
+      flex-direction: column;
+
+      .main-info {
+        padding-bottom: 25px;
+        border-bottom: 1px solid rgba(119, 119, 119, 0.17);
+        margin-bottom: 20px;
+
+        h2 {
+          font-size: 14px;
+          font-weight: 700;
+          color: #1b1919;
+        }
+
+        h1 {
+          margin-bottom: 10px;
+          margin-top: 17px;
+          font-family: 'Lora', serif;
+          font-weight: 400;
+        }
+
+        .price-box {
+          .price {
+            color: #179a94;
+            font-size: 28px;
+          }
+        }
+
+        .quick-desc {
+          margin: 30px 0;
+          font-size: 14px;
+          color: #4c4c4c;
+        }
+
+        .select__color {
+          display: flex;
+          align-items: center;
+
+          .color__list {
+            margin-left: 15px;
+            display: flex;
+
+            li {
+              padding: 0 10px;
+
+              #red {
+                background: #e74c3c;
+              }
+
+              #blue {
+                background: #3498db;
+              }
+
+              #gray {
+                background: #bdc3c7;
+              }
+
+              #orange {
+                background: #f39c12;
+              }
+
+              span {
+                border-radius: 100%;
+                display: block;
+                height: 30px;
+                line-height: 31px;
+                text-align: center;
+                width: 30px;
+              }
+            }
+          }
+        }
+
+        .select__size {
+          margin: 25px 0;
+          display: flex;
+          align-items: center;
+
+          .h2 {
+            font-size: 22px;
+            font-weight: 300;
+          }
+
+          .color__list {
+            margin-left: 15px;
+            display: flex;
+
+            li {
+              padding: 0 10px;
+
+              span {
+                background: #f1f1f1 none repeat scroll 0 0;
+                color: #999;
+                border-radius: 100%;
+                display: block;
+                height: 25px;
+                line-height: 25px;
+                text-align: center;
+                width: 25px;
+                font-size: 14px;
+              }
+            }
+          }
+        }
+        .add_to_cart_button {
+          display: inline-block;
+          text-align: center;
+          font-size: 14px;
+          padding-top: 10px;
+          padding-bottom: 10px;
+          padding-left: 20px;
+          padding-right: 20px;
+          line-height: 18px;
+          text-transform: uppercase;
+          letter-spacing: 0.3px;
+          border-radius: 0;
+          border: 1px solid;
+          -webkit-transition: all 0.25s ease-in-out;
+          transition: all 0.25s ease-in-out;
+          background-color: #000;
+          color: #fff;
+          border-color: #000;
+          cursor: pointer;
+        }
+
+        .in-stock {
+          margin-left: 20px;
+          color: #2ecc71;
+        }
+
+        .out-stock {
+          margin-left: 20px;
+          color: #e74c3c;
+        }
+      }
+
+      .other-info {
+        p {
+          color: #4e4e4e;
+          font-size: 14px;
+          font-weight: 400;
+        }
+
+        .add-wishlist {
+          display: flex;
+          margin-bottom: 15px;
+
+          .ti-heart {
+            color: #4e4e4e;
+            font-size: 16px;
+            margin-right: 5px;
+          }
+        }
+
+        .category {
+          display: flex;
+          font-weight: 700;
+          color: #1b1919;
+          font-size: 14px;
+
+          p {
+            margin-left: 5px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 414px) {
+  .item-details {
+    .item-details__top {
+      display: block;
+      padding: 0 15px;
+      margin-bottom: 30px;
+
+      .item-info {
+        padding: 0;
+      }
+    }
+  }
+}

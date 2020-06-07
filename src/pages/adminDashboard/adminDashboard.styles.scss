@@ -1,0 +1,22 @@
+.site-content {
+  #type-page {
+    .account-content {
+      select {
+        display: block;
+        width: 100%;
+        height: 40px;
+        margin: 20px 0 30px;
+        text-transform: capitalize;
+        font-size: 14px;
+      }
+
+      input {
+        display: block;
+        width: 100%;
+        margin-bottom: 20px;
+        height: 40px;
+        border: 1px solid rgba(129, 129, 129, 0.25);
+      }
+    }
+  }
+}

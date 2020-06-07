@@ -1,0 +1,21 @@
+.page-title-page {
+  background-color: #000;
+  background-size: cover;
+  padding: 40px 0;
+  margin-bottom: 40px;
+
+  .container {
+    width: 90%;
+    padding: 0 15px;
+    margin: 0 auto;
+
+    .entry-header {
+      text-align: center;
+
+      h2 {
+        font-size: 36px;
+        color: #fff;
+      }
+    }
+  }
+}

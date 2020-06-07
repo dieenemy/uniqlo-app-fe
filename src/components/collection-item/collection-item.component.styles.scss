@@ -1,0 +1,94 @@
+.collection-item {
+  display: flex;
+  flex-direction: column;
+  height: 320px;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+  padding: 0 15px;
+
+  .favorite-toggle {
+    position: absolute;
+    bottom: 11%;
+    right: 8%;
+    font-size: 1.2rem;
+  }
+
+  .quick-view {
+    position: absolute;
+    bottom: 11%;
+    right: 18%;
+    font-size: 1.2rem;
+  }
+
+  .border--change {
+    color: #ff4136;
+  }
+
+  .image {
+    width: 100%;
+    height: 95%;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 10px;
+    transition: all 0.4s;
+  }
+
+  .custom-button {
+    width: 80%;
+    opacity: 0.7;
+    position: absolute;
+    top: 40%;
+    display: none;
+  }
+
+  &:hover {
+    .image {
+      opacity: 0.8;
+    }
+
+    .custom-button {
+      opacity: 0.85;
+      display: flex;
+    }
+  }
+
+  .collection-footer {
+    width: 100%;
+    height: 5%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+
+    .name {
+      margin-bottom: 15px;
+      color: #252222;
+      font-size: 15px;
+      letter-spacing: 0.3px;
+    }
+
+    .price {
+      color: #949494;
+      font-size: 16px;
+    }
+  }
+}
+
+@media (max-width: 414px) {
+  .collection-item {
+    padding: 0;
+    height: 239px;
+
+    .quick-view {
+      bottom: 12%;
+      right: 21%;
+      font-size: 1rem;
+    }
+
+    .favorite-toggle {
+      position: absolute;
+      bottom: 12%;
+      font-size: 1rem;
+    }
+  }
+}

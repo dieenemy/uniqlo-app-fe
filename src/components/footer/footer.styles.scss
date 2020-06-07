@@ -1,0 +1,113 @@
+.footer-container {
+  background: #000;
+  color: #fff;
+
+  .main-footer {
+    width: 90%;
+    margin: 0 auto;
+
+    .footer-sidebar {
+      padding: 50px 0 20px 0;
+
+      .footer-column {
+        margin-bottom: 30px;
+
+        .logo-footer {
+          text-align: center;
+
+          img {
+            max-width: 300px;
+          }
+        }
+
+        .textwidget {
+          p {
+            color: rgba(255, 255, 255, 0.6);
+            margin-bottom: 20px;
+            font-size: 14px;
+          }
+
+          .contact-info {
+            color: rgba(255, 255, 255, 0.6);
+            font-size: 14px;
+            line-height: 2;
+
+            .ti-location-pin {
+              margin-right: 4px;
+            }
+
+            .ti-mobile {
+              margin-right: 4px;
+            }
+          }
+        }
+      }
+
+      .footer-content {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 2fr;
+
+        .widget-title {
+          color: #fff;
+          font-size: 16px;
+          text-transform: uppercase;
+          letter-spacing: 1.5px;
+          margin-bottom: 25px;
+          padding-bottom: 4px;
+          position: relative;
+
+          &:before {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            display: inline-block;
+            width: 30px;
+            height: 2px;
+            background-color: #fff;
+          }
+        }
+
+        .menu {
+          line-height: 1;
+
+          li {
+            color: rgba(255, 255, 255, 0.6);
+            margin-bottom: 15px;
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+
+  .copyrights-wrapp {
+    width: 90%;
+    margin: 0 auto;
+
+    .min-footer {
+      padding: 20px 0;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+      text-align: center;
+      color: rgba(255, 255, 255, 0.6);
+      font-size: 14px;
+      line-height: 1.6;
+
+      span {
+        margin-left: 4px;
+        color: #fff;
+      }
+    }
+  }
+}
+
+@media (max-width: 414px) {
+  .footer-container {
+    .main-footer {
+      .footer-sidebar {
+        .footer-content {
+          display: block;
+        }
+      }
+    }
+  }
+}

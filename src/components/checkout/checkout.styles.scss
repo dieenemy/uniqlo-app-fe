@@ -1,0 +1,14 @@
+.button-checkout {
+  width: 100%;
+  padding: 15px 0;
+  font-size: 16px;
+  letter-spacing: 1px;
+  background-color: #179a94;
+  color: #fff;
+  border-color: #179a94;
+
+  &:hover {
+    border-color: #1aada3;
+    background-color: #1aada3;
+  }
+}

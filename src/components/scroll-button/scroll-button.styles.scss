@@ -1,0 +1,35 @@
+.scrollToTop {
+  width: 45px;
+  height: 45px;
+  display: flex;
+  color: #000;
+  z-index: 350;
+  font-size: 14px;
+  border: 1px solid #000;
+  border-radius: 50%;
+  text-decoration: none;
+  background-color: #fff;
+  position: fixed;
+  bottom: 75px;
+  right: 40px;
+  visibility: hidden;
+  opacity: 0;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  transform: scale(1);
+  -webkit-transform: scale(1);
+  transition: 0.2s all ease;
+  -webkit-transition: 0.2s all ease;
+  justify-content: center;
+
+  &.show-scroll {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  &:hover {
+    background: rgb(22, 130, 125);
+    color: #fff;
+    border: none;
+  }
+}
